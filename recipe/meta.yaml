@@ -1,4 +1,4 @@
-{% set version = "1.8.11" %}
+{% set version = "1.8.12" %}
 {% set python_min = "3.11" %}
 {% set python_max = "3.15" %}
 
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://github.com/computational-cell-analytics/micro-sam/archive/v{{ version }}.tar.gz
-  sha256: 255d4090ccb3e33ca57e0f5d757ffe4743111160d17e511bfbd3fec291509388
+  sha256: 23d05c4e431393cf4cb25a3e2b7d90bd677cf49e96e4325f19a1b5bfa7a41a67
 
 build:
   entry_points:
@@ -35,7 +35,7 @@ requirements:
     - bioimage-cpp >=0.3
     - bioimageio.core >=0.11
     - kornia
-    - napari >=0.7.1,<0.9
+    - napari >=0.7.1,<0.10
     - pooch
     - pyqt6
     - python >={{ python_min }},<{{ python_max }}
